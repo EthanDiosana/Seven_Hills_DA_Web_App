@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-
 <!-- This page will display:
         - Student information
             - First Name
@@ -46,26 +40,42 @@
             <h1 id="navbar_student_name">Student Name</h1>
             <div class="menu">
                 <a href="../index.html" class="">Home</a>
-                <a href="" class="">Help</a>
             </div>
-    
-            <button class="hamburger is-active">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
-
-        <!-- Student information area. -->
-        <div id="information_zone"></div>
     </nav>
     <!-- End of nav bar. -->
+
+    <!-- Student Information Area. -->
+    <div class="student-information-div">
+        <div>
+            <span class="info-label">First Name: </span>
+            <span id="first-name" class="info-value">x</span>
+
+            <span class="info-label">Last Name: </span>
+            <span id="last-name" class="info-value">x</span>
+
+            <span class="info-label">Address: </span>
+            <span id="address" class="info-value">x</span>
+
+            <span class="info-label">Phone #: </span>
+            <span id="phone-number" class="info-value">x</span>
+
+            <span class="info-label">Email: </span>
+            <span id="email" class="info-value">x</span>
+
+            <span class="info-label">License #: </span>
+            <span id="license-number" class="info-value">x</span>
+
+            <span class="info-label">License Expiry: </span>
+            <span id="license-expiry" class="info-value">x</span><br>
+        </div>
+    </div>
+    <!-- End of Student Information Area. -->
 
     <script src="../JS/Classes/Student.js"></script>
     <script src="../JS/Classes/Student_Roster.js"></script>
     <script src="../JS/main.js"></script>
-    <script src="../JS/Pages/student_info_page.js" async defer></script>
+    <script src="../JS/Pages/Student_Info_Page/student_info_page.js" async defer></script>
 </body>
 
 </html>

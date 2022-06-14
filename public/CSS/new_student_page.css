@@ -34,18 +34,10 @@ nav {
 
 h1 {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
-}
-
-
-@media (min-width: 768px) {
-
-    .menu {
-        display: flex;
-    }
 }
 
 .menu {
@@ -62,46 +54,47 @@ h1 {
     text-decoration: none;
     transition: 0.4s;
     padding: 8px 16px;
+    margin-left: 35px;
     border-radius: 99px;
 }
+/* End of Nav Bar. */
 
-/** Student Roster Styling. 
-*/
-
-.student_roster_container {
+/* New Student Form. */
+.form-div {
     position: relative;
     display: flex;
-    height: 80vh;
+    height: 77vh;
     background-color: black;
     margin: 10pt;
-    box-shadow: 0 0 0 2pt inset var(--primary);
+    padding:10pt;
+    border-radius: 10px;
 }
 
-#student_roster {
-    display: block;
-    background-color: #000000;
-    border-radius: 5pt;
-    width: 100%;
-    margin: 10pt;
+.form-div form {
+    color: var(--primary)
 }
+/* End of New Student Form. */
 
-.student_widget_div {
-    position: relative;
+
+/* Form Div. */
+
+.form-div {
     display: flex;
-    font-size: 15pt;
-    font-family: 'Courier New', Courier, monospace;
-    justify-content: space-between;
-    padding: 5pt;
-    margin: 5pt;
-    padding-left: 10pt;
-    border-radius: 5px;
-    box-shadow: 2pt 2pt 5pt;
-    background: #ffffff;
 }
 
-.student_widget_div a {
-    background-color: var(--primary);
-    border-radius: 10pt;
+.form-div form {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: auto;
     padding: 2pt;
 }
 
+.form-div label {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-div input {
+    height: 50%;
+    font-size: large;
+}

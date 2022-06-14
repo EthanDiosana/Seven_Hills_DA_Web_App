@@ -20,19 +20,22 @@ class Student_Widget {
         this.name_div.innerText = this.student.name;
         this.name_div.className = "student_widget_name_div"
 
-        // Widget button.
-        this.widget_button = document.createElement("a");
-        this.widget_button.href = "HTML/student_info_page.html";
-        this.widget_button.className = "student_widget_button";
+        // Sessions button.
+        this.sessions_button = document.createElement("a");
+        this.sessions_button.innerText = "sessions"
+        this.sessions_button.href = "HTML/student_sessions_page.html";
+        this.sessions_button.className = "student_widget_button";
 
-        // Arrow.
-        this.arrow = document.createElement("s");
-        this.arrow.innerHTML = "&#8594;";
-        this.widget_button.appendChild(this.arrow);
+        // Info button.
+        this.info_button = document.createElement("a");
+        this.info_button.innerText = "info"
+        this.info_button.href = "HTML/student_info_page.html";
+        this.info_button.className = "student_widget_button";
 
         // Append the pieces to the widget div.
         this.widget_div.appendChild(this.name_div);
-        this.widget_div.appendChild(this.widget_button);
+        this.widget_div.appendChild(this.sessions_button);
+        this.widget_div.appendChild(this.info_button);
     }
 
     get_widget() {

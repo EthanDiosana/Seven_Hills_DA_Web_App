@@ -34,18 +34,10 @@ nav {
 
 h1 {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
-}
-
-
-@media (min-width: 768px) {
-
-    .menu {
-        display: flex;
-    }
 }
 
 .menu {
@@ -62,6 +54,7 @@ h1 {
     text-decoration: none;
     transition: 0.4s;
     padding: 8px 16px;
+    margin-left: 35px;
     border-radius: 99px;
 }
 
@@ -90,6 +83,7 @@ h1 {
     display: flex;
     font-size: 15pt;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
     justify-content: space-between;
     padding: 5pt;
     margin: 5pt;
@@ -99,9 +93,14 @@ h1 {
     background: #ffffff;
 }
 
-.student_widget_div a {
+.student_widget_button {
+    color: var(--dark);
     background-color: var(--primary);
     border-radius: 10pt;
-    padding: 2pt;
+    padding: 5pt;
+    text-decoration: none;
+    font-size: smaller;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
